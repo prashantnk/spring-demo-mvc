@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
@@ -15,10 +16,9 @@ public class HelloWorldController {
 		return "helloworld-form";
 	}
 
-	@RequestMapping("/post")
+	@RequestMapping(value = "/show", method = RequestMethod.POST)
 	public String postForm() {
 		return "postForm";
-
 	}
 
 	@RequestMapping("/postFormVersionTwo")
@@ -27,6 +27,7 @@ public class HelloWorldController {
 		name = name.toUpperCase();
 		String message = "Hello!  " + name;
 		model.addAttribute("message", message);
+		System.out.println(request);
 		return "postForm";
 	}
 

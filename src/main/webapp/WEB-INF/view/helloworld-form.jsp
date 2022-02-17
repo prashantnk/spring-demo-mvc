@@ -7,7 +7,7 @@
 <title>HelloWorld Form</title>
 </head>
 <body>
-	<form action="postFormV3" method="get">
+	<form action="show" method="post">
 		<input placeholder="What's Your Name ?" type="text" name="name"/>
 		<button type="submit">Submit</button>
 	</form>
