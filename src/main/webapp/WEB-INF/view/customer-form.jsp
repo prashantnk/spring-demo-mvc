@@ -40,6 +40,12 @@
 <form:input path="postalCode"/>
 <form:errors path="postalCode" cssClass="error"/>
 </div>
+<div class="field">
+<label>Course Code</label>
+
+<form:input path="courseCode"/>
+<form:errors path="courseCode" cssClass="error"/>
+</div>
 <button type="submit" class="ui button primary">Submit</button>
 
 </form:form>

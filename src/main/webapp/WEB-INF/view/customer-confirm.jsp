@@ -22,6 +22,9 @@ freePasses : ${customer.passes}
 <h2>
 Postal Code : ${customer.postalCode}
 </h2>
+<h2>
+Course Code : ${customer.courseCode}
+</h2>
 </div>
 
 </body>
